@@ -10,7 +10,7 @@ import pandas as pd
 import itertools as it
 
 rfile = np.loadtxt("data3.data")
-
+#%%
 n_rfile = rfile.shape[0]
 n_trans = 1000
 #t_len = 30
@@ -54,7 +54,7 @@ transac = pd.DataFrame(transac)
 
 df = []
 for rows in range(n_trans):
-    df.append([None for _ in range(1000)])
+    df.append([None for _ in range(n_item)])
     
 
 
